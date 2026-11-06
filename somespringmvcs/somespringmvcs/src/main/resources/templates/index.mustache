@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Videos</title>
+  </head>
+  <body>
+    <h1>Geeting started with Spring Boot.</h1>
+    
+    <ul>
+      {{#videos}}
+          <li>{{name}}</li>
+      {{/videos}}
+    </ul>
+    
+    <form action="/new-video" post="post">
+      <input type="text" name="name">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
